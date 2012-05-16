@@ -5,6 +5,7 @@ Public Class Start
     'When Form is started
     Private Sub Start_Activated(sender As Object, e As System.EventArgs) Handles Me.Activated
         Me.WindowState = FormWindowState.Maximized
+        Me.ToolStripStatusLabel1.Text = My.User.Name
     End Sub
 
     Private Sub InformationToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles InformationToolStripMenuItem.Click
