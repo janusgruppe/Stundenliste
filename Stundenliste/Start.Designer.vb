@@ -27,6 +27,8 @@ Partial Class Start
         Me.InfoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InformationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.BeendenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -41,6 +43,7 @@ Partial Class Start
         '
         'StartToolStripMenuItem
         '
+        Me.StartToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripSeparator1, Me.BeendenToolStripMenuItem})
         Me.StartToolStripMenuItem.Name = "StartToolStripMenuItem"
         Me.StartToolStripMenuItem.Size = New System.Drawing.Size(43, 20)
         Me.StartToolStripMenuItem.Text = "Start"
@@ -67,6 +70,17 @@ Partial Class Start
         Me.Button1.Text = "btn_test"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'BeendenToolStripMenuItem
+        '
+        Me.BeendenToolStripMenuItem.Name = "BeendenToolStripMenuItem"
+        Me.BeendenToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.BeendenToolStripMenuItem.Text = "Beenden"
+        '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
+        '
         'Start
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -88,5 +102,7 @@ Partial Class Start
     Friend WithEvents InfoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents InformationToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents BeendenToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

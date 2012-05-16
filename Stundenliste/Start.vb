@@ -22,4 +22,8 @@ Public Class Start
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
         XMLWriter("test", "Das ist ein Test", Date.Now)
     End Sub
+
+    Private Sub BeendenToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles BeendenToolStripMenuItem.Click
+        End
+    End Sub
 End Class
